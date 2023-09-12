@@ -1,13 +1,12 @@
-import OOP.Phone.Person;
+import OOP.Phone.Abstract_Demo_Class;
 import OOP.Phone.Phone;
 
 public class Main {
     public static void main(String[] args) {
-        // Ten lop + ten bien  = new Ten lop ();
-        Person person = new Person();
-//       person.name;
-//        person.setName("Long");
-        System.out.println(person.getName());
+        Phone phone = new Phone();
 
+        // tao abstractDemo
+        // extends Abstract
+//        Abstract_Demo_Class abstractDemoClass = new Abstract_Demo_Class();
     }
 }

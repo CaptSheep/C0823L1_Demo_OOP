@@ -1,29 +1,32 @@
 package OOP.Phone;
 
 public class Phone {
-    String name;
-    String brand;
-    String price;
+    public static String name ;
+    public static String brand;
+    public void  Phone(){};
+    public void  Phone(String name, String brand){
+       this.name = name;
+       this.brand = brand;
+   };
 
-
-    public Phone(){};
-
-    public Phone(String name){
+    public static String getName() {
+        return name;
 
     }
-    public Phone(String name, String brand){
 
+    public void setName(String name) {
+        this.name = name;
     }
 
-    // void : Khong tra ve, khong co return
-    // neu dung void thi chi viec goi phuong thuc
-    // return : chu y kieu du lieu return
-    // neu dung return thi phai in ra
-    public int getInfo(){
-       return 1 + 1;
-    }
-    public void sum(){
-        System.out.println("1");
+    public static String getBrand() {
+        return brand;
     }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void getInfo(){
+       System.out.println("This is a phone");
+   }
 }
